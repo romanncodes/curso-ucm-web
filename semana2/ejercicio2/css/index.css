@@ -1,6 +1,7 @@
 :root{
     /* Primary */
     --Cyan: hsl(179, 62%, 43%);
+    --Cyan2:rgb(50, 209, 206);
     --BrightYellow: hsl(71, 73%, 54%);
 
     /* Neutral */
@@ -9,6 +10,100 @@
 }
 
 body{
+    background-color: var(--LightGray);
     font-family: "Karla", sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    margin: 80px 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px gray;
+}
+
+.cabecera{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cabecera h1{
+    color: var(--Cyan);
+}
+.cabecera h2{
+    color: var(--BrightYellow);
+}
+.cabecera p{
+    color: var(--GrayishBlue);
+}
+
+.footer-left{
+    background-color: var(--Cyan);
+    color: var(--LightGray);
+    padding: 20px;
+}
+
+.footer-left a{
+    display: block;
+    background-color: var(--BrightYellow);
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 3px 3px 15px gray;
+}
+
+.payment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment span{
+    font-weight: 100;
+}
+
+.payment h1{
+    margin: 0 0 10px 0;
+}
+
+.footer-right ul li{
+    list-style: none;
+}
+
+.footer-right ul{
+    padding: 0;
+}
+
+
+
+.footer-right{
+    background-color: var(--Cyan2);
+    color: var(--LightGray);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contenedor{
+        margin: 150px 300px;
+    }
+    .footer{
+        display: flex;
+    }
+    .footer-left{
+        border-radius: 0 0 0 10px;
+        width: 50%;
+    }
+    .footer-right{
+        border-radius: 0 0 10px 0;
+        width: 50%;
+    }
+
 }
